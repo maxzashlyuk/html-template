@@ -1,0 +1,15 @@
+/* #region Variables */
+
+:root {
+  --ht-font-family: "roboto";
+  --ht-font-system: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --ht-transition: .2s cubic-bezier(.4, 0, .2, 1);
+  /* colors */
+  --ht-color-background: #ffffff;
+  --ht-color-accent: orange;
+  --ht-color-success: green;
+  --ht-color-danger: red;
+  --ht-color-text: #333333;
+}
+
+/* #endregion */
