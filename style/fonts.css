@@ -1,0 +1,17 @@
+
+/* #region Fonts */
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+}
+
+/* #endregion */

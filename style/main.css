@@ -1,89 +1,21 @@
-/* File navigation */
 
-/*
-  1. Fonts
-  2. General
-  3. Global styles
-  4. Project styles
-*/
-
-/* #region Fonts */
-
-@font-face {
-  font-family: "roboto";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
-}
-@font-face {
-  font-family: "roboto";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
-}
-
-/* #endregion */
-
-/* #region General */
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-body {
-  position: relative;
-  min-width: 320px;
-  max-width: 100%;
-  min-height: 100%;
-  font: 16px/30px var(--ht-font-family), var(--ht-font-system);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  color: var(--ht-color-text);
-  background-color: var(--ht-color-background);
-  box-sizing: border-box;
-}
-img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
-img:not([src]) {
-  visibility: hidden;
-}
-
-/* #endregion */
-
-/* #region Global styles */
-
-.ht-text-ellipsis {
-  max-width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.ht-visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  border: 0;
-}
-
-/* #endregion */
+@layer  general, libs, base, utilites, media;
+@import url("../libs/uikit/css/uikit.min.css") layer(libs);
+@import url("./fonts.css");
+@import url("./variables.css");
+@import url("./utilites.css") layer(utilites);
+@import url("./general.css") layer(general);
+@import url("./media.css") layer(media);
 
 /* #region Project styles */
 
-div {
-  width: 200px;
-  height: 200px;
+@layer base {
+  div {
+    inline-size: 200px;
+    block-size: 200px;
+  }
 }
+
 /* Your styles */
 
 /* #endregion */
