@@ -1,6 +1,9 @@
 
-@layer  general, libs, base, utilites, media;
-@import url("../libs/uikit/css/uikit.min.css") layer(libs);
+/* Layers Order */
+@layer general, libs, base, utilites, media;
+
+/* Uncomment if your project require library  */
+/* @import url("../libs/uikit/css/uikit.min.css") layer(libs); */
 @import url("./fonts.css");
 @import url("./variables.css");
 @import url("./utilites.css") layer(utilites);
@@ -15,7 +18,5 @@
     block-size: 200px;
   }
 }
-
-/* Your styles */
 
 /* #endregion */

@@ -1,12 +1,14 @@
+
 /* #region Variables */
 
+/* General variables */
 :root {
   --ht-font-family: "roboto";
   --ht-font-system: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   --ht-transition: .2s cubic-bezier(.4, 0, .2, 1);
 }
 
-/* Colors */
+/* Color variables */
 :root {
   --ht-color-background: #ffffff;
   --ht-color-accent: orange;
